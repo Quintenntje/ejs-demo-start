@@ -8,5 +8,5 @@ package-lock.json
 # Node
 node_modules
 
-# Comment this out to exclude .env
-# .env
+
+.env
