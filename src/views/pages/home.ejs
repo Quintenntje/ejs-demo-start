@@ -1,32 +1,3 @@
-<!DOCTYPE html>
-<html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <title>Mijn eerste EJS applicatie</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <% navItems.forEach(navItem => { %>
-          <li><a href="<%= navItem.url %>"><%= navItem.label %> </a></li>
-          <% }); %>
-        </ul>
-      </nav>
-    </header>
-    <h1><%= title %></h1>
+<h1><%= title %></h1>
 
-    <p><%= content %></p>
-
-    <% dinosaurs.forEach(dinosaur => { %>
-    <div>
-      <%= `${dinosaur.id} herbivore: ${dinosaur.isHerbivore} ${dinosaur.name}
-      ${dinosaur.slug} ${dinosaur.image} ${dinosaur.description}` %>
-    </div>
-    <% }); %>
-  </body>
-</html>
+<p><%= content %></p>

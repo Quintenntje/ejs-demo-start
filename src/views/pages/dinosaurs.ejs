@@ -1,0 +1,8 @@
+<h1><%= title %></h1>
+<% dinosaurs.forEach(dinosaur => { %>
+<div>
+  <%= `${dinosaur.id} herbivore: ${dinosaur.isHerbivore} ${dinosaur.name}
+  ${dinosaur.slug} ${dinosaur.image} ${dinosaur.description}` %>
+</div>
+
+<% }); %>
